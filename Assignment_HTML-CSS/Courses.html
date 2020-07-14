@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Courses_Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS Library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        /* Giving the Css appearance for all the body */
+        body {
+            font-family: sans-serif;
+            background-image: url('Image_1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .outerClass {
+            text-align: center;
+
+        }
+        /* The Css appearance for the central box  */
+        .innerClass {
+            display: inline-block;
+            width: 800px;
+            height: 420px;
+            background-color: #96b1ceda;
+            margin-top: 1%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="outerClass">
+        <div class="container innerClass shadow rounded">
+             <!-- Creating a table with the Information about the Courses  -->
+            <table border="1" class="table table-bordered" style="margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <tr>
+                            <!-- All columns of the first row are merged -->
+                            <th colspan="5" style="text-align: center;"><h3><b>Courses</b> </h3></th>
+                        </tr>                        
+                        <th>Course ID</th>
+                        <th>Stream</th>
+                        <th>Type</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Java</td>
+                        <td>Full Time</td>
+                        <td>14/10/2019</td>
+                        <td>14/01/2020</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Java</td>
+                        <td>Part Time</td>
+                        <td>14/10/2019</td>
+                        <td>14/03/2020</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>C#</td>
+                        <td>Full Time</td>
+                        <td>14/10/2019</td>
+                        <td>14/01/2020</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>C#</td>
+                        <td>Part Time</td>
+                        <td>14/10/2019</td>
+                        <td>14/03/2020</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <br>
+             <!-- Buttons which are hyperlinks to other pages -->
+            <div class='row' style="margin-top: -10px;">
+                <div style="text-align: left;" class="col-md-4">
+                    <a href="Course_Form.html" target="_blank">
+                        <button id="myBtn" class="btn btn-secondary"type="submit" class="btn">Add Course</button>
+                    </a>
+                   
+                </div>
+                <div style="text-align: center;" class="col-md-4">
+                    <a href="Course_Form.html" target="_blank">
+                        <button id="myBtn" class="btn btn-secondary" type="submit" class="btn">Updade Course</button>
+                    </a>
+                    
+                </div>
+                 <!-- This button on click calls a function  -->
+                <div style="text-align: right;" class="col-md-4">
+                    <a href="Course_Form.html" target="_blank">
+                        <button style="background-color: #c99424" id="myBtn" class="btn btn-secondary"
+                         type="submit" class="btn" onclick="showAlert()">Delete Course</button>
+                    </a>
+                   
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        // Method to be shown the pop up 
+        function showAlert() {
+            alert("Are you sure you want to delete a Course")
+        };
+    </script>
+
+</body>
+
+</html>

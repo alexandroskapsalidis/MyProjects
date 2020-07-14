@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Assignments_Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS Library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        
+        /* Giving the Css appearance for all the body */
+        body {
+            font-family: sans-serif;
+            background-image: url('Image_1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .outerClass {
+            text-align: center;
+        }
+
+        /* The Css appearance for the central box  */
+        .innerClass {
+            display: inline-block;
+            width: 700px;
+            height: 430px;
+            background-color: #96b1ceda;
+            margin-top: 3%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="outerClass">
+        <!-- Creating an inner class inside the outer class  -->
+        <div class="container innerClass shadow p-3 mb-5 rounded">
+            <h3 style="padding-top: 10px"><b>Adding & Updading Assignments </b> </h3>
+            <!-- Creatind the form with input data and validation  -->
+            <form action="post" style="padding-top: 20px;">
+                <!-- Dividing the screen with bootstrap rules -->
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col-md-6">
+                        <div>
+                            <label for="Assignment Id"><b>Assignment Id</b></label> <br>
+                            <!-- Number validation - not under 0 -->
+                            <input type="number" name="Assignment Id" placeholder="Assignment Id" min="1" required>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6" style="padding-top: 20px;">
+                        <div>
+                            <label for="Title"><b>Title</b></label><br>
+                            <input type="text" placeholder="Title" required maxlength="50">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <label for="Description"><b>Description</b></label><br>
+                            <textarea name="Description" rows="2" cols="25"></textarea> &nbsp; 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col-md-6">
+                        <div>
+                            <!-- Submission date with validation  -->
+                            <label for="Submission Date"><b>Submission Date</b></label><br>
+                            <input type="Date" placeholder="Submission Date" required id="datePickerId">
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <!-- Using a  drop-down list for the Courses -->
+                            <label for="Course"><b>Course</b></label> <br>
+                            <select name="Course" required>
+                                <optgroup label= "Java">
+                                    <option value="Java Full Time"> Java Full Time</option>
+                                    <option value="Java Part Time"> Java Part Time</option>                                   
+                                </optgroup>
+                                <optgroup label= "C#">
+                                    <option value="C# Full Time"> C# Full Time</option>
+                                    <option value="C# Part Time">C# Part Time</option>
+                                </optgroup>        
+                            </select>     
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The buttons, type reset and submit -->
+                <div class="row" style="padding-top: 30px;">
+                    <div class="col-md-6">
+                        <button type="reset" class="btn btn-warning"><b> Reset </b> </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-success"><b> Submit </b> </button>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- ------------------- script --------------------- -->
+
+        <script>
+
+            // Validating the Date, not to be before today
+            datePickerId.min = new Date().toISOString().split("T")[0];
+           
+        </script>
+
+</body>
+
+</html>

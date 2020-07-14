@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Assignments_Per_Course_Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS Library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+
+        /* Giving the Css appearance for all the body */
+        body {
+            font-family: sans-serif;
+            background-image: url('Image_1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .outerClass {
+            text-align: center;
+        }
+
+        /* The Css appearance for the central box  */
+        .innerClass {
+            display: inline-block;
+            width: 730px;
+            height: 360px;
+            background-color: #96b1ceda;
+            margin-top: 3%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="outerClass">
+         <!-- Creating an inner class inside the outer class  -->
+        <div class="container innerClass shadow p-3 mb-5 rounded">
+            <h3 style="padding-top: 10px"><b>Adding & Updading Assignments Per Course</b> </h3>
+             <!-- Creatind the form with input data and validation  -->
+            <form action="post" style="padding-top: 20px;">
+                <!-- Dividing the screen with bootstrap rules -->
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col-md-6">
+                        <div>
+                            <label for="Course Id"><b>Assignment Id</b></label> <br>
+                            <!-- Number validation not under 0 -->
+                            <input type="number" name="Trainer Id" placeholder="Trainer Id" min="1" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div>
+                            <div>
+                                <label for="Title"><b>Title</b></label><br>
+                                <input type="text" placeholder="Title" required required maxlength="50">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 40px;">
+                    <div class="col-md-6">
+                        <div>
+
+                            <b>Course Stream</b> &nbsp;
+                            <input type="radio" name="Course" value="Java"> Java &nbsp;
+                            <input type="radio" name="Course" value="C#"> C# &nbsp;
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <!-- Using Radio Type input for the Course Type  -->
+                            <b>Course Type</b> &nbsp;
+                            <input type="radio" name="Type" value="Full Time"> Full Time &nbsp;
+                            <input type="radio" name="Type" value="Part Time"> Part Time &nbsp;
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- The buttons, type reset and submit -->
+                <div class="row" style="padding-top: 60px;">
+                    <div class="col-md-6">
+                        <button type="reset" class="btn btn-warning"><b> Reset </b> </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-success"><b> Submit </b> </button>
+                    </div>
+
+                </div>
+
+            </form>
+
+
+        </div>
+        
+</body>
+
+</html>

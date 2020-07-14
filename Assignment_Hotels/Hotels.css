@@ -1,0 +1,76 @@
+.outerClass {
+    text-align: center;
+}
+
+.upperClass {
+    display: inline-block;
+    width: 800px;
+    height: 220px;
+    background-color: #1c2331da;
+    margin-top: 2%;
+    /* text-align: center; */
+}
+
+.lowerClass {
+    display: inline-block;
+    width: 800px;
+    height: 500px;
+    background-color: #7e8491da;
+    margin-bottom: 2%;
+    /* text-align: center; */
+}
+
+/* Range slider css code  */
+#divBody {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 10vh;
+    /* background-color: #222; */
+    font-family: 'Poppins', sans-serif;
+}
+
+#inputRange {
+    position: relative;
+}
+
+#rangeValue {
+    position: absolute;
+    top: 33px;
+    right: -65px;
+    padding: 2px;
+    width: 50px;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+}
+
+#rangeValue:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+}
+
+.range {
+    width: 160px;
+    height: 2px;
+    background: #111;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00bcd4;
+}

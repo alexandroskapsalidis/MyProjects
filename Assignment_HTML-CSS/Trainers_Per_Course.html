@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Trainers_Per_Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS Library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        /* Giving the Css appearance for all the body */
+        body {
+            font-family: sans-serif;
+            background-image: url('Image_1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .outerClass {
+            text-align: center;
+        }
+
+        /* The Css appearance for the central box  */
+        .innerClass {
+            display: inline-block;
+            width: 800px;
+            height: 470px;
+            background-color: #96b1ceda;
+            margin-top: 1%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="outerClass">
+        <div class="container innerClass shadow rounded">
+            <!-- Creating a table with the Information about the Assignments  -->
+            <table border="1" class="table table-bordered" style="margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <!-- All columns of the first row are merged -->
+                        <th colspan="5" style="text-align: center;">
+                            <h3><b>Trainers Per Course</b> </h3>
+                        </th>
+                    </tr>
+                    <th>Trainer ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Course</th>
+                    <th>Type</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mixalis</td>
+                        <td>Ignatiou</td>
+                        <td>Java</td>
+                        <td>Full Time</td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Petros</td>
+                        <td>Papadopoulos</td>
+                        <td>C#</td>
+                        <td>Part Time</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Xristos</td>
+                        <td>Nikolaou</td>
+                        <td>Frond End</td>
+                        <td>Full Time</td>
+
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Giorgos</td>
+                        <td>Karamanos</td>
+                        <td>Java</td>
+                        <td>Part Time</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Theodoros</td>
+                        <td>Karanikolas</td>
+                        <td>Frond End</td>
+                        <td>Part Time</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <!-- Buttons which are hyperlinks to other pages -->
+            <div class='row' style="margin-top: -10px;">
+                <div style="text-align: left;" class="col-md-4">
+                    <a href="Trainers_Per_Course_Form.html" target="_blank">
+                        <button id="myBtn" class="btn btn-secondary" type="submit" class="btn">Add Trainers Per
+                            Course</button>
+                    </a>
+
+                </div>
+                <div style="text-align: center;" class="col-md-4">
+                    <a href="Trainers_Per_Course_Form.html" target="_blank">
+                        <button id="myBtn" class="btn btn-secondary" type="submit" class="btn">Updade Trainers Per
+                            Course</button>
+                    </a>
+
+                </div>
+                <!-- This button on click calls a function  -->
+                <div style="text-align: right" class="col-md-4">
+                    <a href="Trainers_Per_Course_Form.html" target="_blank">
+                        <button style="background-color: #c99424" id="myBtn" class="btn btn-secondary" type="submit"
+                            class="btn" onclick="showAlert()">Delete Trainers Per Course</button>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        // Methodos gia na emfanistei to pop up 
+        function showAlert() {
+            alert("Are you sure you want to delete a Trainers Per Course")
+        };
+    </script>
+
+</body>
+
+</html>

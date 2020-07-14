@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Students_Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS Library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        /* Css styles for all the body  */
+        body {
+            font-family: sans-serif;
+            background-image: url('Image_1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .outerClass {
+            text-align: center;
+
+        }
+
+        /* Css styles for the central box */
+        .innerClass {
+            display: inline-block;
+            width: 800px;
+            height: 520px;
+            background-color: #96b1ceda;
+            margin-top: 1%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="outerClass">
+        <!-- I use the class container from bootstrap, I make the div rounded and I put shadow  -->
+        <div class="container innerClass shadow rounded">
+
+            <!-- Table with the students  -->
+            <table border="1" class="table table-bordered" style="margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <!-- All columns of the first row are merged -->
+                        <th colspan="5" style="text-align: center;"><h3><b>Students</b> </h3></th>
+                    </tr>
+                    <th>Student ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Date of Birth</th>
+                    <th>Tuition Fees</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>100</td>
+                        <td>Manolis</td>
+                        <td>Mpakodimos</td>
+                        <td>25/05/1989</td>
+                        <td>2500 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td>101</td>
+                        <td>Mixalis</td>
+                        <td>Papamixail</td>
+                        <td>04/12/1985</td>
+                        <td>2500 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Petros</td>
+                        <td>Karamanos</td>
+                        <td>04/11/1990</td>
+                        <td>2250 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Thanasis</td>
+                        <td>Masxonisiotis</td>
+                        <td>15/10/1994</td>
+                        <td>2250 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Eleni</td>
+                        <td>Mpakodimou</td>
+                        <td>17/06/1987</td>
+                        <td>2500 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td>Magda</td>
+                        <td>Karapanou</td>
+                        <td>01/12/1982</td>
+                        <td>0 &euro;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <!-- The Buttons with special style and color -->
+            <div class='row' style="margin-top: -10px;">
+                <div style="text-align: left;" class="col-md-4">
+                    <a href="Students_Form.html" target="_blank">
+                        <button id="myBtn" class="btn btn-secondary" type="submit" class="btn">Add Student</button>
+                    </a>
+                </div>
+                <div style="text-align: center;" class="col-md-4">
+                    <a href="Students_Form.html" target="_blank">
+                        <button id="myBtn" class="btn btn-secondary" type="submit" class="btn">Updade Student</button>
+                    </a>
+                    
+                </div>
+                <!-- This button on click calls a function  -->
+                <div style="text-align: right" class="col-md-4">
+                    <a href="Students_Form.html" target="_blank">
+                        <button style="background-color: #c99424" id="myBtn" class="btn btn-secondary" type="submit"
+                            class="btn" onclick="showAlert()">Delete Student</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        // Method to show the pop up before deleting a student 
+        function showAlert() {
+            alert("Are you sure you want to delete a Student")
+        };
+    </script>
+
+</body>
+
+</html>

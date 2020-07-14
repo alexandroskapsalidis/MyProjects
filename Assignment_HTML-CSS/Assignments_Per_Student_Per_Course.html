@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Assignments_Per_Student_Per_Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS Library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        /* Giving the Css appearance for all the body */
+        body {
+            font-family: sans-serif;
+            background-image: url('Image_1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .outerClass {
+            text-align: center;
+
+        }
+
+        /* The Css appearance for the central box  */
+        .innerClass {
+            display: inline-block;
+            width: 900px;
+            height: 830px;
+            background-color: #96b1ceda;
+            margin-top: 1%;
+            margin-bottom: 2%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="outerClass">
+        <div class="container innerClass shadow rounded">
+            <!-- Creating a table with the Information about the Assignments per Student per Course -->
+            <table border="1" class="table table-bordered" style="margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <!-- All columns of the first row are merged -->
+                        <th colspan="7" style="text-align: center;">
+                            <h3><b>Assignments Per Student Per Course</b> </h3>
+                        </th>
+                    </tr>
+                    <th>Assignment ID</th>
+                    <th>Title</th>
+                    <th>Student ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Course</th>
+                    <th>Type</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Java Part A</td>
+                        <td>100</td>
+                        <td>Manolis</td>
+                        <td>Mpakodimos</td>
+                        <td>Java</td>
+                        <td>Part Time</td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Java SQL Part A</td>
+                        <td>101</td>
+                        <td>Mixalis</td>
+                        <td>Papamixail</td>
+                        <td>Java</td>
+                        <td>Part Time</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Java Frond End Part A</td>
+                        <td>102</td>
+                        <td>Petros</td>
+                        <td>Karamanos</td>
+                        <td>Java</td>
+                        <td>Full Time</td>
+
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Java Part B</td>
+                        <td>103</td>
+                        <td>Thanasis</td>
+                        <td>Masxonisiotis</td>
+                        <td>Java</td>
+                        <td>Part Time</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Java SQL Part B</td>
+                        <td>104</td>
+                        <td>Eleni</td>
+                        <td>Mpakodimou</td>
+                        <td>Java</td>
+                        <td>Part Time</td>
+
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Java Front End Part B</td>
+                        <td>105</td>
+                        <td>Magda</td>
+                        <td>Karapanou</td>
+                        <td>Java</td>
+                        <td>Part Time</td>
+
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>C# Part A</td>
+                        <td>100</td>
+                        <td>Manolis</td>
+                        <td>Mpakodimos</td>
+                        <td>C#</td>
+                        <td>Full Time</td>
+
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>C# SQL Part A</td>
+                        <td>101</td>
+                        <td>Mixalis</td>
+                        <td>Papamixail</td>
+                        <td>C#</td>
+                        <td>Part Time</td>
+
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>C# Front End Part A</td>
+                        <td>102</td>
+                        <td>Petros</td>
+                        <td>Karamanos</td>
+                        <td>C#</td>
+                        <td>Full Time</td>
+
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>C# Part B</td>
+                        <td>103</td>
+                        <td>Thanasis</td>
+                        <td>Masxonisiotis</td>
+                        <td>C#</td>
+                        <td>Part Time</td>
+
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>C# SQL Part B</td>
+                        <td>104</td>
+                        <td>Eleni</td>
+                        <td>Mpakodimou</td>
+                        <td>C#</td>
+                        <td>Full Time</td>
+
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>C# Front End Part B</td>
+                        <td>105</td>
+                        <td>Magda</td>
+                        <td>Karapanou</td>
+                        <td>C#</td>
+                        <td>Part Time</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <!-- Buttons which are hyperlinks to other pages -->
+            <div class='row' style="margin-top: -10px;">
+                <div style="text-align: left;" class="col-md-4">
+                    <a href="Assignments_Per_Student_Per_Course_Form.html" target="_blank">
+                        <button id="myBtn" class="btn btn-secondary" type="submit" class="btn">Add Assignments Per
+                            Student Per Course</button>
+                    </a>
+                </div>
+                <div style="text-align: center;" class="col-md-4">
+                    <a href="Assignments_Per_Student_Per_Course_Form.html" target="_blank">
+                        <button id="myBtn" class="btn btn-secondary" type="submit" class="btn">Updade Assignments Per
+                            Student Per Course</button>
+                    </a>
+
+                </div>
+                <!-- This button on click calls a function  -->
+                <div style="text-align: right" class="col-md-4">
+                    <a href="Assignments_Per_Student_Per_Course_Form.html" target="_blank">
+                        <button style="background-color: #c99424" id="myBtn" class="btn btn-secondary" type="submit"
+                            class="btn" onclick="showAlert()">Delete
+                            Assignments Per Student Per Course</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+         // Method to be shown the pop up 
+        function showAlert() {
+            alert("Are you sure you want to delete an Assignments Per Student Per Course")
+        };
+    </script>
+
+</body>
+
+</html>
