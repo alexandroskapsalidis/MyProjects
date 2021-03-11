@@ -1,0 +1,140 @@
+body {
+    margin: 1%;
+    padding: 1%;
+    font-size: 110%;
+}
+
+/* -------------------- 
+   header styling 
+   -------------------- */
+
+header {
+    text-align: center;
+    background-image: url('../images/flywheel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #707c4e;
+    padding: 5px;
+    padding-bottom: 3%;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+nav a {
+    color: #1a242e;
+    font-weight: bold;
+    background-color: rgba(202, 207, 212, 0.3);
+    padding: 1%;
+    margin-right: 10%;
+    display: inline-block;
+    width: 130px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #ffffff;
+}
+
+/* -------------------- 
+   aside styling 
+   -------------------- */
+
+.left {
+    display: inline-block;
+    width: 25%;
+    float: left;
+    background-color: #767612;
+    height: 550px;
+}
+
+img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: solid 2px #000000;
+}
+
+/* -------------------- 
+   section styling 
+   -------------------- */
+
+.right {
+    display: inline-block;
+    width: 75%;
+    height: 550px;
+    background-color: #ffffff;
+    font-weight: 520;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/* -------------------- 
+   table styling 
+   -------------------- */
+   
+/* General table styling */
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;    
+    margin: 0 auto;     /* centering the table  */
+    border: 2px solid #FFFFFF;
+    width: 75%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    margin-bottom: 20px;    
+}
+
+/* The header of the table  */
+thead {
+    background: #909a55;    /* Old browsers, no gradient*/
+    background:    -moz-linear-gradient(top, #c7e7ab, #909a55);
+    background: -webkit-linear-gradient(#c7e7ab, #909a55);
+    background:      -o-linear-gradient(#c7e7ab, #909a55);
+    background:         linear-gradient(#c7e7ab, #909a55);
+    border-bottom: 3px solid #aae06b;
+    color: #ffffff
+}
+
+/* Rounding the upper left corner  */
+thead th:first-child {
+    -webkit-border-radius: 5px 0 0 0;
+            border-radius: 5px 0 0 0;
+}
+
+/* Rounding the upper right corner  */
+thead th:last-child {
+    -webkit-border-radius: 0 5px 0 0;
+            border-radius: 0 5px 0 0;
+}
+
+tbody {
+    background: #e2f5d7;
+}
+
+/* Aligning left the text in the first column */
+tr th:first-child, tr td:first-child {
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Reducing the opacity of the rows */
+tbody tr {
+    opacity: .7;
+}
+
+/* Changing the opacity of a row when it is hovered over */
+tbody tr:hover {
+    opacity: 1;
+}
