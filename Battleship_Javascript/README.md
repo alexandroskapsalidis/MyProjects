@@ -1,0 +1,1 @@
+A Web application which simulates a battleship game. There is a 49 cell board and the user guesses whether behind a cell is hiding a ship or not. The application utilizes HTML, CSS and JavaScript.
