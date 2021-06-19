@@ -1,0 +1,1 @@
+Hotels. An online hotel booking web page. It utilizes HTML, CSS, Javascript, jQuery
