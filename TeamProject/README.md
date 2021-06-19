@@ -1,0 +1,1 @@
+A Java Web Application for private tutors. Features: Organizing appointments, seeing/inserting/deleting students, seeing student’s address on a map, uploading/downloading files, chatting with students who can also login. Technologies used: Java/Spring Boot, SQL, Web Socket, Javascript, HTML/CSS/Bootstrap.
