@@ -1,1 +1,1 @@
-A Web Site about the team sport Ultimate Frisbee. It has four pages. Every page has a navigation bar with the current page highlighted. It utilizes CSS technologies such as float, gradient, rounded corners, pseudo class selectors, Hover.
+A Web Site about the team sport Ultimate Frisbee. It has four pages. Every page has a navigation bar with the current page highlighted. It utilizes CSS technologies such as float, gradient, rounded corners, pseudo class selectors.
