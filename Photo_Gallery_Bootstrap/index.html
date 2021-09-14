@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>My Photo Gallery</title>
+
+    <style>
+        .container {
+            margin-top: 3.5rem;
+            padding-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            color: #e5e5e5;
+        }
+
+        picture small {
+            width: 90%;
+            line-height: 1.1rem;
+
+        }
+    </style>
+
+
+</head>
+
+<body class="bg-secondary">
+    <header>
+
+        <!-- The Navigation Bar  -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <!-- Brand/logo -->
+            <a class="navbar-brand p-0" href="#">
+                <img class="img-fluid" src="images/logo.png" alt="Logo" width="150">
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsible-navbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Collapsible links -->
+            <div class="collapse navbar-collapse justify-content-center" id="collapsible-navbar2">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-5"><a class="nav-link active" href="#">Home-Gallery</a></li>
+                    <li class="nav-item mr-5"><a class="nav-link" href="carousel.html">Carousel</a></li>
+                    <!-- Dropdown -->
+                    <li class="nav-item  dropdown dropright  mr-5">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Choosing Photo</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light" href="images/image001.jpg" target="_blank">Mediteranean
+                                sea view</a>
+                            <a class="dropdown-item text-light" href="images/image002.jpg" target="_blank">Through the
+                                rushes</a>
+                            <a class="dropdown-item text-light" href="images/image003.jpg" target="_blank">Poros
+                                island</a>
+                            <a class="dropdown-item text-light" href="images/image004.jpg" target="_blank">Choppy
+                                sea</a>
+                            <a class="dropdown-item text-light" href="images/image005.jpg" target="_blank">Moonlight</a>
+                            <a class="dropdown-item text-light" href="images/image006.jpg" target="_blank">Abandoned
+                                boat</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-5"><a class="nav-link" href="conduct.html">Conduct</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="text-center font-weight-light">My Photo Gallery</h1>
+
+            <!-- Photo Gallery using Bootstrap Cards -->
+            <div class="row">
+
+                <div class="col-sm-6 col-lg-4 card text-center bg-light p-2 p-sm-1 mx-1 mx-sm-0">
+                    <div class="card-body p-1">
+                        <picture>
+                            <a href="images/image001.jpg" target="_blank">
+                                <img class="img-fluid rounded" src="images/image001.jpg" alt="Mediteranean sea view">
+                            </a>
+                            <caption><small class="d-block">Mediteranean sea view</small></caption>
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 card text-center bg-light p-2 p-sm-1 mx-1 mx-sm-0">
+                    <div class="card-body p-1">
+                        <picture>
+                            <a href="images/image002.jpg" target="_blank">
+                                <img class="img-fluid rounded" src="images/image002.jpg" alt="Through the rushes">
+                            </a>
+                            <caption><small class="d-block">Through the rushes</small></caption>
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 card text-center bg-light p-2 p-sm-1 mx-1 mx-sm-0">
+                    <div class="card-body p-1">
+                        <picture>
+                            <a href="images/image003.jpg" target="_blank">
+                                <img class="img-fluid rounded" src="images/image003.jpg" alt="Poros island">
+                            </a>
+                            <caption><small class="d-block mx-sm-auto">Poros island</small></caption>
+                        </picture>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-4 card text-center bg-light p-2 p-sm-1 mx-1 mx-sm-0">
+                    <div class="card-body p-1">
+                        <picture>
+                            <a href="images/image004.jpg" target="_blank">
+                                <img class="img-fluid rounded" src="images/image004.jpg" alt="Choppy sea">
+                            </a>
+                            <caption><small class="d-block">Choppy sea</small></caption>
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 card text-center bg-light p-2 p-sm-1 mx-1 mx-sm-0">
+                    <div class="card-body p-1">
+                        <picture>
+                            <a href="images/image005.jpg" target="_blank">
+                                <img class="img-fluid rounded" src="images/image005.jpg" alt="Moonlight">
+                            </a>
+                            <caption><small class="d-block">Moonlight</small></caption>
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 card text-center bg-light p-2 p-sm-1 mx-1 mx-sm-0">
+                    <div class="card-body p-1">
+                        <picture>
+                            <a href="images/image006.jpg" target="_blank">
+                                <img class="img-fluid rounded" src="images/image006.jpg" alt="Abandoned boat">
+                            </a>
+                            <caption><small class="d-block">Abandoned boat</small></caption>
+                        </picture>
+                    </div>
+                </div>
+
+            </div> <!-- row -->
+
+
+
+
+        </div> <!-- container -->
+    </main>
+
+
+
+    <!-- For bootstrap 4 -->
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
