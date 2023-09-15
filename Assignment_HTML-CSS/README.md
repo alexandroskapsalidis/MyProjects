@@ -1,1 +1,1 @@
-A Web Site that shows information about Students, Trainers, Courses, Assignments, in tables. This information can be updated or deleted using forms. The project is about the layout contains HTML and CSS.
+A Web Site that shows information about Students, Trainers, Courses, Assignments, in tables. This information can be updated or deleted using forms. The project presents only the layout not the functionality so it HTML and CSS code.
