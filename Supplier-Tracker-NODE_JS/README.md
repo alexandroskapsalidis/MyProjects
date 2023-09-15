@@ -5,7 +5,7 @@ The node.js code resides inside the app.js file. There is a folder called
 public which has the CSS files. Another folder called views, has the content
 to be shown in the browser (the ejs files). The ejs files allow us to write
 html templates and also inject dynamic data logic into them. Some repeated html
-code is in separate ejs files inside the partial folder. When application runs
+code is in separate ejs files inside the partials folder. When application runs
 it loads first the "index.ejs" file. If the URL is wrong, it redirects to a 404 page.
 
 The "web-supplier-tracker_DBschema.sql" file contains the SQL code to create the
