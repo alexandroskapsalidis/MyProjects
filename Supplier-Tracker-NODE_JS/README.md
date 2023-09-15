@@ -8,7 +8,7 @@ html templates and also inject dynamic data logic into them. Some repeated html
 code is in separate ejs files inside the partials folder. When application runs
 it loads first the "index.ejs" file. If the URL is wrong, it redirects to a 404 page.
 
-The "web-supplier-tracker_DBschema.sql" file contains the SQL code to create the
+The "supplier-tracker_DBschema.sql" file contains the SQL code to create the
 Database and enter some data. Then to connect to the Database you have to enter
 the username and password of the Database, in the mysql.createConnection() function,
 inside the "app.js" file or create a user and use his credentials.
