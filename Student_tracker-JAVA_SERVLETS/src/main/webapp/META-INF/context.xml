@@ -1,0 +1,24 @@
+<!-- 
+   The context.xml is a small, Tomcat specific file that tells Tomcat how to connect
+   to the database. And how to configure your pool, such as how many connections
+   to create up front, the minimum number of connections etc. There is a context
+   tag and inside it there is a resource reference in the middle. In there you give
+   the name of the resource. This name is the alias we'll use later on in our
+   application to look up this connection pool. On the next line we tell Tomcat how
+   we're going to authenticate, auth="Container" means the Tomcat Server will handle
+   the authentication. Next in type=... there is the name of the Java interface that
+   we'll use for communicating with the pool. In the Java world the term "DataSource"
+   means Connection Pool. Next we define the size of the connections. In the next three
+   lines we tell Tomcat how to connect to the Database. username and password of the
+   account we created, the fully qualified name of the JDBC driver, and finally the URL
+   to the database. -->
+   
+<Context>
+
+  <Resource name="jdbc/web_student_tracker"
+  			auth="Container" type="javax.sql.DataSource"
+               maxActive="20" maxIdle="5" maxWait="10000"
+               username="root" password="12345"
+               driverClassName="com.mysql.cj.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/web_student_tracker?useSSL=false"/>
+</Context>

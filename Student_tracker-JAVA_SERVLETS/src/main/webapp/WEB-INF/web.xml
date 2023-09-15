@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>web-student-tracker</display-name>
+  
+  <welcome-file-list>
+   	<welcome-file>StudentControllerServlet</welcome-file>
+   	<welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>TestServlet</display-name>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>com.luv2code.web.jdbc.TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>StudentControllerServlet</display-name>
+    <servlet-name>StudentControllerServlet</servlet-name>
+    <servlet-class>com.luv2code.web.jdbc.StudentControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentControllerServlet</servlet-name>
+    <url-pattern>/StudentControllerServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
