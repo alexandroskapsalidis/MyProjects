@@ -1,0 +1,1 @@
+This Java web application, powered by Servlets technology, emulates a university management system, facilitating Create, Read, Update, and Delete (CRUD) operations. Upon launching, users access a student array, where they can add, update, or delete student records with ease. After each operation, users return to view the updated list of students.
